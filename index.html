@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Luna Log</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        h1 { color: #006a6a; border-bottom: 2px solid #006a6a; padding-bottom: 8px; }
+        h2 { color: #334; margin-top: 32px; }
+        hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+        th { background: #f0f0f0; }
+        strong { color: #006a6a; }
+        .updated { color: #666; font-size: 14px; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e0; }
+            h1 { color: #4cdada; border-color: #4cdada; }
+            h2 { color: #ccc; }
+            hr { border-color: #333; }
+            th { background: #2a2a3e; }
+            th, td { border-color: #444; }
+            strong { color: #4cdada; }
+            .updated { color: #999; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy — Luna Log</h1>
+    <p class="updated"><strong>Last updated:</strong> March 24, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Luna Log is a private period and symptom tracking app. Your health data stays on your device. We collect nothing.</p>
+
+    <hr>
+
+    <h2>Data Collection</h2>
+    <p><strong>We collect no data. None.</strong></p>
+    <ul>
+        <li>No account required</li>
+        <li>No network requests</li>
+        <li>No analytics or telemetry</li>
+        <li>No advertising SDKs</li>
+        <li>No third-party services</li>
+    </ul>
+
+    <hr>
+
+    <h2>Data Storage</h2>
+    <p>All data (period logs, symptoms, basal body temperature, notes, and settings) is stored exclusively in a local SQLite database on your device. The database is sandboxed inside the app's private storage and is not accessible to other apps.</p>
+
+    <hr>
+
+    <h2>Local Crash Logs</h2>
+    <p>When the app crashes, a crash report is saved to the app's private internal storage on your device. These files contain only the error stack trace and a timestamp — no personal health data. A maximum of 10 crash logs are kept; older ones are automatically deleted. <strong>Crash logs are never sent anywhere.</strong> They remain on your device and are only accessible to you.</p>
+
+    <hr>
+
+    <h2>Data Sharing</h2>
+    <p>Your data is never shared with anyone because it never leaves your device. The export feature (CSV/ZIP) creates a file locally using Android's Storage Access Framework (SAF) — you choose where to save or share the file. We have no involvement in or visibility into that process.</p>
+
+    <hr>
+
+    <h2>Backup &amp; Restore</h2>
+    <p>Luna Log supports local backup and restore via Android's Storage Access Framework (SAF). When you create a backup, the app writes a file to a location you choose on your device. When you restore, you select a backup file from your device. All backup operations are user-initiated and local — no cloud service is involved.</p>
+
+    <hr>
+
+    <h2>On-Device AI (Gemini Nano)</h2>
+    <p>On supported devices (Pixel 8+ / Galaxy S24+), Luna Log may offer optional AI-powered insights using Google's Gemini Nano model. This model runs entirely on your device — <strong>no data is sent to Google, to any server, or off your device in any way.</strong> The feature is disabled by default and only activates on hardware that supports it.</p>
+
+    <hr>
+
+    <h2>Biometric / App Lock</h2>
+    <p>If you enable App Lock, authentication is handled entirely by Android's BiometricManager using your device's biometric hardware (fingerprint, face, or PIN). No biometric data is accessed or stored by Luna Log.</p>
+
+    <hr>
+
+    <h2>Permissions</h2>
+    <table>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+        <tr><td><code>USE_BIOMETRIC</code></td><td>App Lock feature (optional, off by default)</td></tr>
+        <tr><td><code>POST_NOTIFICATIONS</code></td><td>Daily reminder notification (optional, off by default)</td></tr>
+        <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Reschedule daily reminder after device restart</td></tr>
+    </table>
+    <p>No internet, camera, location, contacts, or microphone permissions are requested or used.</p>
+
+    <hr>
+
+    <h2>Children</h2>
+    <p>Luna Log is not directed at children under 13. We have no way to collect data from anyone, of any age.</p>
+
+    <hr>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy ever changes, the updated policy will be published at this URL and the date above will change. We will never introduce data collection without updating this document.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:support@lunalog.app">support@lunalog.app</a></p>
+</body>
+</html>
